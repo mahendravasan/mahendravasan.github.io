@@ -1,0 +1,199 @@
+*{margin:0;padding: 0;box-sizing:border-box;}
+body{text-align: center;height: 100vh;display: flex;justify-content: center;align-items: center;overflow: hidden;}
+svg{width: 90%;}
+#astronomer
+{
+	animation: astronomer 5s ease-in-out infinite alternate;
+	transform-origin: bottom;
+}
+
+#rocket-main
+{
+	animation: rocket-main 0.1s linear infinite;
+}
+#Rocket
+{
+	animation: rocket-up 2s linear infinite alternate;
+}
+
+#star1,#red-star2
+{
+	animation: star 1s ease-in-out infinite alternate;
+	transform-origin: center;
+	transform-box:fill-box;
+}
+#star3,#star4
+{
+	animation: star-two 1.5s ease-in-out infinite alternate;
+	transform-origin: center;
+	transform-box:fill-box;
+}
+#star3_2,#red-star1
+{
+	animation: star-three 2s ease-in-out infinite alternate;
+	transform-origin: center;
+	transform-box:fill-box;
+}
+#Rings
+{
+	animation: rings 2s ease-in-out infinite alternate;
+	transform-origin: center;
+	transform-box:fill-box;
+}
+#planet
+{
+	animation: planet 2s ease-in-out infinite alternate;
+	transform-origin: center;
+	transform-box:fill-box;
+}
+#antena
+{
+	animation: antena 6s linear infinite alternate;
+	transform-origin: bottom;
+}
+
+#hand-left
+{
+	animation: hand 3s linear infinite alternate;
+	transform-origin: 50%;
+}
+#hand-right
+{
+	animation: handright 3s linear infinite alternate;
+	transform-origin: top;
+}
+
+@keyframes astronomer
+{
+	0%
+	{
+		transform: translateY(0px) rotateZ(0deg);
+	}
+	50%
+	{
+		transform: translateY(20px) rotateZ(5deg);
+	}
+	100%
+	{
+		transform: translateY(0px) rotateZ(0deg);
+	}
+}
+
+@keyframes rocket-main
+{
+	0%
+	{
+		transform: translateX(0px);
+	}
+	100%
+	{
+		transform: translateX(2px);
+	}
+}
+
+@keyframes rocket-up
+{
+	0%
+	{
+		transform: translateY(0px);
+	}
+	100%
+	{
+		transform: translateY(35px);
+	}
+}
+
+@keyframes star
+{
+	0%
+	{
+		transform: scale(0.5);
+	}
+	100%
+	{
+		transform: scale(1);
+	}
+}
+@keyframes star-two
+{
+	0%
+	{
+		transform: scale(0.8);
+	}
+	100%
+	{
+		transform: scale(1);
+	}
+}
+@keyframes star-three
+{
+	0%
+	{
+		transform: scale(0.7);
+	}
+	100%
+	{
+		transform: scale(1);
+	}
+}
+@keyframes rings
+{
+	0%
+	{
+		transform: skewX(0deg);
+	}
+	100%
+	{
+		transform: skewX(5deg);
+	}
+}
+@keyframes planet
+{
+	0%
+	{
+		transform: scale(1);
+	}
+	100%
+	{
+		transform: scale(1.1);
+	}
+}
+
+@keyframes antena
+{
+	0%
+	{
+		transform: rotateZ(1deg) translateY(0px);
+	}
+	50%
+	{
+		transform: rotateZ(0deg) translateY(10px);
+	}
+	100%
+	{
+		transform: rotateZ(-1deg) translateY(5px);
+	}
+}
+
+@keyframes hand
+{
+	0%
+	{
+		transform: translate(0px, 0px) rotateZ(0deg)
+	}
+	100%
+	{
+		transform: translate(0px, -20px) rotate(5deg);
+	}
+}
+@keyframes handright
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(1deg);
+	}
+}

@@ -1,0 +1,247 @@
+*{margin:0;padding: 0;box-sizing:border-box;}
+body{text-align: center;height: 100vh;display: flex;justify-content: center;align-items: center;overflow: hidden;}
+svg{width: 90%;}
+#wind-fan
+{
+	animation: wind 5s linear infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+#cloud-one
+{
+	animation: cloud 6.5s ease-in-out infinite alternate;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+#cloud-two
+{
+	animation: cloud 6s ease-in-out infinite alternate;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+/* #cloud-three
+{
+	animation: cloud 1s linear infinite alternate;
+	transform-origin: center;
+	transform-box: fill-box;
+	} */
+	#cloud-four
+	{
+		animation: cloud 5.5s ease-in-out infinite alternate;
+		transform-origin: center;
+		transform-box: fill-box;
+	}
+	#cloud-five
+	{
+		animation: cloud 5s ease-in-out infinite alternate;
+		transform-origin: center;
+		transform-box: fill-box;
+	}
+	#sun-cloud
+	{
+		animation: cloud 15s ease-in-out infinite alternate;
+		transform-origin: center;
+		transform-box: fill-box;
+	}
+	#sun
+	{
+		animation: sun 3s linear infinite alternate;
+		transform-origin: top;
+		transform-box: fill-box;
+	}
+	
+	#bird-one
+	{
+		animation: bird 2.5s linear infinite alternate;
+		transform-origin: top;
+		transform-box: fill-box;
+	}
+	#bird-two
+	{
+		animation: bird 2.8s linear infinite alternate;
+		transform-origin: top;
+		transform-box: fill-box;
+	}
+	#bird-three
+	{
+		animation: bird 4s linear infinite alternate;
+		transform-origin: top;
+		transform-box: fill-box;
+	}
+	#bird-four
+	{
+		animation: bird 3.5s linear infinite alternate;
+		transform-origin: top;
+		transform-box: fill-box;
+	}
+	#plan
+	{
+		animation: plan 60s ease;
+		transform-origin: bottom;
+		transform-box: fill-box;
+		opacity: 0;
+	}
+	#christmash-tree-one
+	{
+		animation: chrishtmas-tree 3s linear infinite alternate;
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+	#christmash-tree-two
+	{
+		animation: chrishtmas-tree 2s linear infinite alternate;
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+	#tree-one
+	{
+		animation: tree-one 6s linear infinite alternate;
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+	#tree-two
+	{
+		animation: tree-one 4s linear infinite alternate;
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+	#flower-two,#flower-four,#flower-six,#flower-eight,#flower-ten,#leaf-three,#leaf-one
+	{
+		animation: tree-one 1.5s linear infinite alternate;
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+	#flower-one,#flower-three,#flower-five,#flower-seven,#flower-nine,#leaf-two
+	{
+		animation: tree-one 1s linear infinite alternate;
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+	#tractor-body
+	{
+		animation: tractor 0.1s linear infinite alternate;
+		transform-origin: bottom;
+		transform-box: fill-box;
+	}
+	#bakc-wheel,#front-wheel
+	{
+		animation: wheel 1.5s linear infinite alternate;
+		transform-origin: center;
+		transform-box: fill-box;
+	}
+	@keyframes wind
+	{
+		from
+		{
+			transform: rotate(0deg);
+		}
+		to
+		{
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes cloud
+	{
+		from
+		{
+			transform: translateX(0px);
+		}
+		to
+		{
+			transform: translateX(100px);
+		}
+	}
+	@keyframes sun
+	{
+		from
+		{
+			transform: scale(1);
+		}
+		to
+		{
+			transform: scale(1.1);
+		}
+	}
+	@keyframes bird
+	{
+		from
+		{
+			transform: rotateY(0deg) translateY(0px);
+		}
+		to
+		{
+			transform: rotateY(75deg) translateY(25px);
+		}
+	}
+	@keyframes plan
+	{
+		from
+		{
+			transform: translateX(0px);
+			opacity: 1;
+		}
+		
+		to
+		{
+			transform: translateX(1600px) translateY(-75px) scale(0.5);
+			opacity: 0;
+		}
+	}
+	
+	@keyframes chrishtmas-tree
+	{
+		0%
+		{
+			transform: rotate(-10deg);
+		}
+		
+		50%
+		{
+			transform: rotate(0deg);
+		}
+		100%
+		{
+			transform: rotate(10deg);
+		}
+	}
+	@keyframes tree-one
+	{
+		0%
+		{
+			transform: rotate3d(1, 1, 1, 8deg);
+		}
+		
+		50%
+		{
+			transform: rotate3d(1, 1, 1, 0deg);
+		}
+		100%
+		{
+			transform: rotate3d(1, 1, 1, 8deg);
+		}
+	}
+
+	@keyframes tractor
+	{
+		from
+		{
+			transform: translateY(0px);
+		}
+		
+		to
+		{
+			transform: translateY(2px);
+		}
+	}
+	@keyframes wheel
+	{
+		from
+		{
+			transform: rotateX(0deg);
+		}
+		
+		to
+		{
+			transform: rotateX(15deg);
+		}
+	}
